@@ -62,8 +62,8 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
     private UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-//        config.setAllowedOrigins(List.of("https://heartfelt-cheesecake-d9da3f.netlify.app/","https://fastidious-bubblegum-9906b4.netlify.app"));
-        config.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:5174"));
+        config.setAllowedOrigins(List.of("https://foodadmin-net.netlify.app/","https://foodclient-net.netlify.app/"));
+//        config.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:5174"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         config.setAllowCredentials(true);
